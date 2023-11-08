@@ -1,0 +1,18 @@
+
+
+main{
+
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    
+}
+
+div{
+
+    width:  100px;
+    height: 100px;
+    background-color: green;
+}
