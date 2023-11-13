@@ -1,50 +1,31 @@
 
 
-const nomes= ['jao','bao','zao','gab','tai']; //criando uma lista para criar  e basicamente [] ai os valores dentro separados ,
-console.log(nomes)
-//------------------------acessando valores--------------------------
+const num =[1,2,3,4,5];
+console.log("Lista normal")
+console.log(num)
 
-// toda lista inicia com 0
-console.log(nomes[0]);// para acessar so por nome da lista + [] e dentro dos pareteses e a posição
+// Map
+// map recebe uma lista e ira realizar alguma operação e retorna uma lista
 
+const numMultPor2= num.map(x=> x*2);
+//o map recebe uma função  para realizar a operação desejada
 
-//-----------------------adc valores ao final da lista------------------
+console.log("Map: Lista multiplicada por 2")
+console.log(numMultPor2)
 
+// Filter
+// filter ira receber uma lista ira retorna uma lista filtrada baseado nos parametros que passou
+const ePar= num.filter(x=> x%2===0);
 
-nomes.push("kai");
-console.log(nomes)
+console.log("Filter: Lista de pares")
+console.log(ePar)
 
-//-----------------------adc valores no inicio da lista-------------------
+// Reduce
+// Reduce e quando nos queremos reduzir o valor para apenas 1
 
-nomes.unshift('zen');
-console.log(nomes)
+const soma = num.reduce((num,accumulator)=>{return accumulator+num},10)//aonde estar o 10 no caso e opcional ele vc pode substituir ele por qualquer outro pois ele apenas define o valor inicial da  soma
 
-//-----------------------removendo valores ao final da lista----------------
+console.log("Reduce: soma de valores")
+console.log(soma)
 
-nomes.pop();
-console.log(nomes)
-
-//-----------------------atualizando valores--------------------------------
-
-nomes[3] ='sai';
-console.log(nomes)
-
-//-----------------------verificando indice do elemento----------------------
-
-console.log(nomes.indexOf('jao'))
-
-//-----------------------ordenando uma lista----------------------------------
-
-let nomesOrdenados = nomes.sort();
-console.log(nomesOrdenados);
-
-//-----------------------metodo retorna a quantidade de itens na lista----------
-
-console.log(nomes.length);
-
-//-----------------------verificando se e uma lista------------------------------
-
-let nomeELista = Array.isArray(nomes);
-
-console.log(nomeELista)
-// outros metodos basta olha no mdn
+// Qual quer  completo ver na mdn
