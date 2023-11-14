@@ -4,8 +4,8 @@
 const pessoa ={
     nome:'jao',
     sobrenome:'bao',
-    idade: 23,
-    
+    idade: 21,
+    hobbies:["jogar","ler",'assistir']
 }
 
 console.log("Objeto")
