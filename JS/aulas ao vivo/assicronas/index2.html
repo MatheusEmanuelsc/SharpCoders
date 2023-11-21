@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        async function requi() {
+            
+            for(let i =1; i <= 151; i++){
+
+                let requisicao = await fetch('https://pokeapi.co/api/v2/pokemon/'+i);
+
+                let pokemon =  await requisicao.json();
+
+                console.log(pokemon.name)
+
+            }
+
+            
+        }
+
+        requi()
+    </script>
+</body>
+</html>
