@@ -1,0 +1,26 @@
+<!-- Condicional -->
+@if (media >=7) {
+  <p>Aprovado(a)</p>
+}@else if (media >= 5) {
+  <p>Em exame</p>
+}@else {
+  <p>Reprovado(a)</p>
+}
+
+
+@switch (linguagem) {
+
+  @case ('html') { <p>linguagem de marcação.</p> }
+  @case ('css') { <p>linguagem de estilo.</p> }
+  @case ('js') { <p>linguagem de programação.</p> }
+  @default {<p>"linguagem não encontrada"</p> }
+}
+
+
+
+@for(nome of nomes; track $index){
+  <!-- <p>{{index}} -{{nome}}</p> -->
+}@empty {
+  <p>Vetor vazio</p>
+}
+
